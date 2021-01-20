@@ -3,7 +3,6 @@
 # load libraries
 library(tidyverse)
 library(networkD3)
-library(data.tree)
 
 # load and wrangle data
 demographics <- rKenyaCensus::V4_T2.31 %>%
@@ -99,8 +98,8 @@ ggraph(mygraph, layout = 'circlepack', weight = size) +
   theme_void() + 
   theme(legend.position = "none",
         plot.background = element_rect(fill = "#BABABA", color = "#BABABA"),
-        plot.title = element_text(hjust = 0.5, size = 20, color = "#04100A", family = "Inter-Medium"),
-        plot.subtitle = element_text(hjust = 0.5, size = 14, color = "#04100A", family = "Inter-Light",
+        plot.title = element_text(hjust = 0.5, size = 19, color = "#04100A", family = "Inter-Medium"),
+        plot.subtitle = element_text(hjust = 0.5, size = 12, color = "#04100A", family = "Inter-Light",
                                      lineheight = 1.2, margin = margin(0.8, 0, -0.8, 0, unit = "line")),
         plot.caption = element_text(hjust = 0.5, size = 12, color = "#04100A"))
 
