@@ -85,11 +85,11 @@ mygraph <- graph_from_data_frame(edges, vertices = vertices )
 ggraph(mygraph, layout = 'circlepack', weight = size) + 
   geom_node_circle(aes(fill = as.factor(depth), color = as.factor(depth))) +
   geom_node_label(aes(label = shortName), size = 5, fill = "#DDDAD9", color = "#04100A", family = "Inter-Medium") +
-  scale_fill_manual(values = c("0" = "#999999", 
+  scale_fill_manual(values = c("0" = "#BABABA", 
                                "1" = "#0C331F", 
                                "2" = "#C04245", 
                                "3" = "#76A58E")) +
-  scale_color_manual(values = c("0" = "#999999", 
+  scale_color_manual(values = c("0" = "#BABABA", 
                                 "1" = "#04100A", 
                                 "2" = "#04100A", 
                                 "3" = "#04100A")) +
@@ -98,7 +98,7 @@ ggraph(mygraph, layout = 'circlepack', weight = size) +
        caption = "Data: 2019 Kenya Population and Housing Census via rKenyaCensus | Viz: @_natalie_oshea") +
   theme_void() + 
   theme(legend.position = "none",
-        plot.background = element_rect(fill = "#999999", color = "#999999"),
+        plot.background = element_rect(fill = "#BABABA", color = "#BABABA"),
         plot.title = element_text(hjust = 0.5, size = 20, color = "#04100A", family = "Inter-Medium"),
         plot.subtitle = element_text(hjust = 0.5, size = 14, color = "#04100A", family = "Inter-Light",
                                      lineheight = 1.2, margin = margin(0.8, 0, -0.8, 0, unit = "line")),
