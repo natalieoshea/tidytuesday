@@ -102,4 +102,3 @@ ggraph(mygraph, layout = 'circlepack', weight = size) +
         plot.subtitle = element_text(hjust = 0.5, size = 12, color = "#04100A", family = "Inter-Light",
                                      lineheight = 1.2, margin = margin(0.8, 0, -0.8, 0, unit = "line")),
         plot.caption = element_text(hjust = 0.5, size = 12, color = "#04100A"))
-
