@@ -108,4 +108,4 @@ ggraph(mygraph, layout = 'circlepack', weight = size) +
                                      lineheight = 1.2, margin = margin(0.8, 0, -0.8, 0, unit = "line")),
         plot.caption = element_text(hjust = 0.5, size = 12, color = "#04100A"))
 
-ggsave("2021-01-19.png")
+ggsave("2021/output/2021-01-19.png")
