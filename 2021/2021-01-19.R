@@ -85,7 +85,7 @@ vertices <- full_df %>%
 mygraph <- graph_from_data_frame(edges, vertices = vertices )
 
 #### generate plot ####
-
+set.seed(1234)
 ggraph(mygraph, layout = 'circlepack', weight = size) + 
   geom_node_circle(aes(fill = as.factor(depth), color = as.factor(depth))) +
   geom_node_label(aes(label = shortName), size = 5, fill = "#DDDAD9", color = "#04100A", family = "Inter-Medium") +
